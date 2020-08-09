@@ -1,0 +1,639 @@
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShoptiFy.Product</title>
+    <link rel="shortcut icon" href="5.JPG" type="image/x-icon">
+    <link rel="stylesheet" href="bootstrap/bootstrap-4.0.0-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap/fontawesome-free-5.12.1-web/css/all.min.css">
+    <link rel="stylesheet" href="shop.css">
+</head>
+<body class="bg-warning" data-spy="scroll" data-offset="50" data-target=".navbar">
+    <!--Navigation bar-->
+    <nav class="navbar bg-warning navbar-expand-xl sticky-top">
+        <a href="" class="navbar-brand">
+             <h2 style="font-family: 'Courier New', Courier, monospace; font-size: 50px; font-weight: bolder; float: left;">ShoptiFy<i class="fas fa-shopping-cart"></i> </h2>
+        </a>
+        <button class="navbar-toggler"  data-target="#collapsibleNavbar" type="button" data-toggle="collapse">
+            <span class="fas fa-bars" style="border: solid 2px; border-radius: 5px; padding: 5px; font-size: x-large;"></span>
+        </button>
+        <div  class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+            <ul class="navbar-nav" style="font-family: 'Courier New', Courier, monospace;">
+                <li class="nav-item">
+                    <a href="#" class="nav-link" id="li"><i class="fas fa-home"></i> HOME </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link" id="li"><i class="fas fa-male"></i> MEN</a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link" id="li"><i class="fas fa-female"></i> WOMEN</a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link" id="li"><i class="fas fa-baby"></i> KIDS</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#con" class="nav-link" id="li"><i class="fas fa-address-card"></i> CONTACT-US</a>
+                </li>
+                <li class="nav-item">
+                   <div class="dropdown">
+                       <a href="" class="dropdown-toggle nav-link" id="li1" data-toggle="dropdown"> MORE </a>
+                       <div class="dropdown-menu bg-warning">
+                           <a href="" class="dropdown-item" id="li1">TOP'S</a>
+                           <div class="dropdown-divider" style="color: black;"></div>
+
+                           <a href="" class="dropdown-item" id="li1">TROUSER'S</a>
+                           <div class="dropdown-divider"></div>
+
+                           <a href="" class="dropdown-item" id="li1">JERSEY</a>
+                           <div class="dropdown-divider"></div>
+
+                           <a href="" class="dropdown-item" id="li1">CAPS</a>
+                           <div class="dropdown-divider"></div>
+
+                           <a href="" class="dropdown-item" id="li1">I-PHONES & More</a>
+                       </div>
+                   </div>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link" id="li" data-target="#SellModal" data-toggle="modal"><i class="fas fa-user-circle"></i> Sign-up</a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link" id="li" data-target="#BuyModal" data-toggle="modal"><i class="fas fa-user"></i> Login</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!--End Of Navigation bar-->
+
+            <!--Modal Section-->
+                <!--Sell Modal-->
+        <div class="modal" id="BuyModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <h2 class="modal-title bg-warning" style="font-family: 'Courier New', Courier, monospace; font-weight:  bolder;">
+                        Shoptify<i class="fas fa-shopping-cart"></i> 
+                        <button class="close" data-dismiss="modal" style="font-size: xx-large; padding: 10px;">&times;</button>
+                    </h2>
+                    <div class="modal-body">
+                        <form action="" class="form-group">
+                            <input type="email" placeholder="E-mail Address" class="form-control">
+                            <input type="password" placeholder="Password" class="form-control">
+                            <button class="btn btn-success"><i class="fas fa-user-circle"></i> Login </button>
+                            <button class="btn btn-danger" style="float: right;" data-dismiss="modal"><b>&times;</b> Close</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+                <!--Buy Modal End-->
+        <div class="modal" id="SellModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <h2 class="modal-title bg-warning" style="font-family: 'Courier New', Courier, monospace; font-weight: bolder;"> Shoptify<i class="fas fa-shopping-cart"></i>
+                        <button class="close" data-dismiss="modal" style="font-size: xx-large; padding: 10px;">&times;</button>
+                    </h2>
+                <div class="modal-body">
+                    <form action="" class="form-group">
+                        <input type="text" placeholder="First Name" class="form-control">
+                        <input type="text" placeholder="Last Name" class="form-control">
+                        <input type="email" placeholder="E-mail Address" class="form-control">
+                        <input type="text" placeholder="Mobile" class="form-control">
+                        <input type="password" placeholder="Create Password" class="form-control">
+                        <button class="btn btn-success"><i class="fas fa-user-check"></i> Sign-up</button>
+                        <button class="btn btn-danger" data-dismiss="modal" style="float: right;"> &times; Later</button>
+                    </form>
+                </div>
+                </div>
+            </div>
+        </div>
+                <!--Buy modal-->
+        <div class="modal" id="cartmodal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <h2 class="modal-title bg-warning">
+                        ShoptiFy<i class="fas fa-shopping-cart"></i>
+                        <button type="button" class="close" data-dismiss="modal" style="font-size: xx-large; padding: 10px;">&times;</button>
+                    </h2>
+                    <div class="modal-body">
+                        <form action="" class="forom-group">
+                            <input type="text" placeholder="Full Name" required class="form-control">
+                            <input type="tel" placeholder="Mobile Number" class="form-control" required>
+                            <input type="text" placeholder="Address Line-1" class="form-control" required>
+                            <input type="text" placeholder="Address Line-2" class="form-control">
+                            <input type="text" placeholder="Receiver's Name" class="form-control" required>
+                            <input type="number" placeholder="Quantity" class="form-control" name="" id="" required>
+                            <button class="btn btn-success" type="submit" style="float: right;"> Buy Now <i class="fas fa-check"></i></button>
+                            <button class="btn btn-danger" type="submit" style="float: left;" data-dismiss="modal"> Buy Now <b>&times;</b></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <!--End of Modal Section-->
+        
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="cont" style="text-align: center;">
+                       <h2 style="color: black;" id="h2"> SHOP NOW</h2>
+                        <p style="font-size: x-large; font-family: monospace; font-weight: bold; color: black;">PAY ON DELEVERY Delevery fee Not Included</p>
+                            <a href="#nav" id="btn" class="btn" style="color: black;">
+                                SHOPTIFY Now <i class="fas fa-arrow-right"></i>
+                            </a>
+                        <h1 style="font-family: 'Courier New', Courier, monospace; font-weight: bolder; color: orange; text-shadow: black 2px 3px 4px;">Shop more and <p style="font-size: 100px;"><sup>+</sup><strong>1</strong><sub style="font-size: xx-large;">FREE</sub></p></h1>
+
+                    </div>
+                </div>
+                <div class="col-4" style="text-align: center;" id="col">
+                    <img src="1.PNG" id="im" width="150px" height="350px" style="border-radius: 20px; box-shadow: black 1px 2px 3px 4px;" alt="">
+                    <img src="4.JPG" id="m" width="150px" height="350px" style="border-radius: 20px; box-shadow: black 1px 2px 3px 4px;" alt="">
+                </div>
+                <div class="col-4" id="contact">
+                    <div class="cont" style="text-align: center;">
+                        <h2 id="h1"> Shoptify<i class="fas fa-shopping-cart"></i> </h2>
+                           <a href="https://api.whatsapp.com/send?phone=8152715095&text=This%20is%20Shoptify%20Please%20How%20may%20we%20help%20you%20" id="btn" class="btn btn-success" style="color: black;">
+                             Whatsapp <i class="fab fa-whatsapp"></i>
+                            </a>
+
+                       <a href="https://api.whatsapp.com/send?phone=8152715095&text=This%20is%20Shoptify%20Please%20How%20may%20we%20help%20you%20" id="btn" class="btn btn-danger" style="color: black;">
+                             Instagram <i class="fab fa-instagram"></i>
+                            </a>
+
+                        
+                       <a href="https://api.whatsapp.com/send?phone=8152715095&text=This%20is%20Shoptify%20Please%20How%20may%20we%20help%20you%20" id="btn" class="btn btn-primary" style="color: black;">
+                             Facebook <i class="fab fa-facebook"></i>
+                         </a>
+                        <h1 id="md" id="h1" style="font-family: 'Courier New', Courier, monospace; font-weight: bolder;">Shop with us</h1>
+                    </div>
+                </div>
+            </div>
+            <marquee behavior="" direction="" > <h3 style="font-family: 'Courier New', Courier, monospace; font-size: 50px;">Shop to your Satisfaction Shop to your Satisfaction Shop to your Satisfaction Shop to your Satisfaction Shop to your Satisfaction Shop to your Satisfaction v Shop to your Satisfaction Shop to your Satisfaction Shop to your Satisfaction Shop to your Satisfaction Shop to your Satisfaction Shop to your SatisfactionShop to your Satisfaction</h3></marquee>
+        </div>
+        <nav id="nav" class="navbar bg-light justify-content-center" style="color: black; margin-top: -10px;">
+           <h2 style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; color: black;">ONLINE</h2>
+            <ul class="bar" style="font-weight: bolder; font-size: small;">
+                <li class="nav-item">
+                    For Bulk Buyers you will get a 20% Discount
+                </li>
+                <li class="nav-item">
+                    99% Good Quality Okay in its very Affordable price
+                </li>
+                <li class="nav-item">
+                    Ok Wears and Shirt From Japan and Singapore
+                </li>
+                <li class="nav-item">
+                    Open for Bulk Buyers, Resellers and personal use
+                </li>
+                <li class="nav-item">
+                    Fast and FREE DELEVERY within LAGOS
+                </li>
+            </ul>
+        </nav>
+            <!--Product Section-->
+        <div class="container" id="mobile">
+            <nav class="navbar navbar-expand-xl "></nav>
+                <span class="btn" style="background-color: black; color: white;">NEW PRODUCT</span>
+            <div class="row" id="r">
+                <div class="col-md-3 col-6">
+                    <div class="media">
+                        <div class="media-body rounded" style="padding: 5px; width: 200px;">
+                             <div class="img bg-light rounded" style="width: 100%; padding: 5px;">
+                                 <img src="image/yello.JPG" class="rounded align-self-start" width="100%" height="300px" alt="">
+                                 <h4>$75</h4>
+                                 <h6 style="padding-bottom: 0px;">Nice Hat</h6>
+                                  <small>Stock: <b class="text-success">22</b></small>
+                                 <small>Sold: <b class="text-success">12</b></small>
+                                 <div class="btn-group btn-group-vertical" style="width: 100%;">
+                                    <button class="btn text-light" style="background-color: rgb(2, 117, 2); font-size: 2vh;" data-target="#cartmodal" data-toggle="modal">BUY NOW <i class="fas fa-phone text-success"></i></button>
+                                    <button class="btn text-light" style="background-color: black; font-size: 2vh;" data-target="#cartmodal"> Cart <i class="fas fa-shopping-cart"></i></button>
+                                </div>
+                             </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="media">
+                        <div class="media-body rounded" style="padding: 5px; width: 200px;">
+                             <div class="img bg-light rounded" style="width: 100%; padding: 5px;">
+                                 <img src="image/complete.JPG" class="rounded align-self-start" width="100%" height="300px" alt="">
+                                 <h4>$75</h4>
+                                 <h6 style="padding-bottom: 0px;">Nice Hat</h6>
+                                  <small>Stock: <b class="text-success">22</b></small>
+                                 <small>Sold: <b class="text-success">12</b></small>
+                                 <div class="btn-group btn-group-vertical" style="width: 100%;">
+                                    <button class="btn text-light" style="background-color: rgb(2, 117, 2); font-size: 2vh;" data-target="#cartmodal" data-toggle="modal">BUY NOW <i class="fas fa-phone text-success"></i></button>
+                                    <button class="btn text-light" style="background-color: black; font-size: 2vh;" data-target="#cartmodal"> Cart <i class="fas fa-shopping-cart"></i></button>
+                                </div>
+                             </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-6">
+                    <div class="media">
+                        <div class="media-body rounded" style="padding: 5px; width: 200px;">
+                             <div class="img bg-light rounded" style="width: 100%; padding: 5px;">
+                                 <img src="image/WQFT5335.JPG" class="rounded align-self-start" width="100%" height="300px" alt="">
+                                 <h4>$75</h4>
+                                 <h6 style="padding-bottom: 0px;">Nice Hat</h6>
+                                  <small>Stock: <b class="text-success">22</b></small>
+                                 <small>Sold: <b class="text-success">12</b></small>
+                                 <div class="btn-group btn-group-vertical" style="width: 100%;">
+                                    <button class="btn text-light" style="background-color: rgb(2, 117, 2); font-size: 2vh;" data-target="#cartmodal" data-toggle="modal">BUY NOW <i class="fas fa-phone text-success"></i></button>
+                                    <button class="btn text-light" style="background-color: black; font-size: 2vh;" data-target="#cartmodal"> Cart <i class="fas fa-shopping-cart"></i></button>
+                                </div>
+                             </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-6">
+                    <div class="media">
+                        <div class="media-body rounded" style="padding: 5px;">
+                             <div class="img bg-light rounded" style="width: 100%; padding: 5px;">
+                                 <img src="image/WOUY4221.JPG" class="rounded align-self-start" width="100%" height="300px" alt="">
+                                 <h4>$45</h4>
+                                 <h6 style="padding-bottom: 0px;">Cool Jacket</h6>
+                                 <small>Stock: <b class="text-success">15</b></small>
+                                 <small>Sold: <b class="text-success">12</b></small>
+                                 <div class="btn-group btn-group-vertical" style="width: 100%;">
+                                    <button class="btn text-light" style="background-color: rgb(2, 117, 2); font-size: 2vh;" data-target="#cartmodal" data-toggle="modal">BUY NOW <i class="fas fa-phone text-success"></i></button>
+                                    <button class="btn text-light" style="background-color: black; font-size: 2vh;" data-target="#cartmodal"> Cart <i class="fas fa-shopping-cart"></i></button>
+                                </div>
+                             </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-6">
+                    <div class="media">
+                        <div class="media-body rounded" style="padding: 5px;">
+                             <div class="img bg-light rounded" style="width: 100%; padding: 5px;">
+                                 <img src="image/off-white.JPG" class="rounded align-self-start" width="100%" height="300px" alt="">
+                                 <h4>$50</h4>
+                                 <h6 style="padding-bottom: 0px;">Jeans Trouser</h6>
+                                 <small>Stock: <b class="text-success">32</b></small>
+                                 <small>Sold: <b class="text-success">12</b></small>
+                                 <div class="btn-group btn-group-vertical" style="width: 100%;">
+                                    <button class="btn text-light" style="background-color: rgb(2, 117, 2); font-size: 2vh;" data-target="#cartmodal" data-toggle="modal">BUY NOW <i class="fas fa-phone text-success"></i></button>
+                                    <button class="btn text-light" style="background-color: black; font-size: 2vh;" data-target="#cartmodal"> Cart <i class="fas fa-shopping-cart"></i></button>
+                                </div>
+                             </div>
+                        </div>
+                    </div>
+                 </div>
+ 
+                 <div class="col-md-3 col-6">
+                     <div class="media">
+                         <div class="media-body rounded" style="padding: 5px;">
+                              <div class="img bg-light rounded" style="width: 100%; padding: 5px;">
+                                  <img src="image/tape.JPG" class="rounded align-self-start" width="100%" height="300px" alt="">
+                                  <h4>$75</h4>
+                                  <h6 style="padding-bottom: 0px;">Nice Hat</h6>
+                                  <small>Stock: <b class="text-success">22</b></small>
+                                  <small>Sold: <b class="text-success">12</b></small>
+                                  <div class="btn-group btn-group-vertical" style="width: 100%;">
+                                    <button class="btn text-light" style="background-color: rgb(2, 117, 2); font-size: 2vh;" data-target="#cartmodal" data-toggle="modal">BUY NOW <i class="fas fa-phone text-success"></i></button>
+                                    <button class="btn text-light" style="background-color: black; font-size: 2vh;" data-target="#cartmodal"> Cart <i class="fas fa-shopping-cart"></i></button>
+                                </div>
+                              </div>
+                         </div>
+                     </div>
+                 </div>
+ 
+                 <div class="col-6 col-md-3">
+                     <div class="media">
+                         <div class="media-body rounded" style="padding: 5px;">
+                              <div class="img bg-light rounded" style="width: 100%; padding: 5px;">
+                                  <img src="image/RRFY1241.JPG" class="rounded align-self-start" width="100%" height="300px" alt="">
+                                  <h4>$45</h4>
+                                  <h6 style="padding-bottom: 0px;">Cool Jacket</h6>
+                                  <small>Stock: <b class="text-success">15</b></small>
+                                  <small>Sold: <b class="text-success">12</b></small>
+                                  <div class="btn-group btn-group-vertical" style="width: 100%;">
+                                    <button class="btn text-light" style="background-color: rgb(2, 117, 2); font-size: 2vh;" data-target="#cartmodal" data-toggle="modal">BUY NOW <i class="fas fa-phone text-success"></i></button>
+                                    <button class="btn text-light" style="background-color: black; font-size: 2vh;" data-target="#cartmodal"> Cart <i class="fas fa-shopping-cart"></i></button>
+                                </div>
+                              </div>
+                         </div>
+                     </div>
+                 </div>
+
+                 <div class="col-md-3 col-6">
+                    <div class="media">
+                        <div class="media-body rounded" style="padding: 5px;">
+                             <div class="img bg-light rounded" style="width: 100%; padding: 5px;">
+                                 <img src="image/club.JPG" class="rounded align-self-start" width="100%" height="300px" alt="">
+                                 <h4>$60</h4>
+                                 <h6 style="padding-bottom: 0px;">Suite <small style="display: inline;">complete </small></h6>
+                                 <small>Stock: <b class="text-success">30</b></small>
+                                 <small>Sold: <b class="text-success">12</b></small>
+                                 <div class="btn-group btn-group-vertical" style="width: 100%;">
+                                    <button class="btn text-light" style="background-color: rgb(2, 117, 2); font-size: 2vh;" data-target="#cartmodal" data-toggle="modal">BUY NOW <i class="fas fa-phone text-success"></i></button>
+                                    <button class="btn text-light" style="background-color: black; font-size: 2vh;" data-target="#cartmodal"> Cart <i class="fas fa-shopping-cart"></i></button>
+                                </div>
+                             </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-3 col-6">
+                    <div class="media">
+                        <div class="media-body rounded" style="padding: 5px;">
+                             <div class="img bg-light rounded" style="width: 100%; padding: 5px;">
+                                 <img src="image/collage (2).JPG" class="rounded align-self-start" width="100%" height="300px" alt="">
+                                 <h4>$80</h4>
+                                 <h6 style="padding-bottom: 0px;">Hair Wig</h6>
+                                 <small>Stock: <b class="text-success">31</b></small>
+                                 <small>Sold: <b class="text-success">12</b></small>
+                                 <div class="btn-group btn-group-vertical" style="width: 100%;">
+                                    <button class="btn text-light" style="background-color: rgb(2, 117, 2); font-size: 2vh;" data-target="#cartmodal" data-toggle="modal">BUY NOW <i class="fas fa-phone text-success"></i></button>
+                                    <button class="btn text-light" style="background-color: black; font-size: 2vh;" data-target="#cartmodal"> Cart <i class="fas fa-shopping-cart"></i></button>
+                                </div>
+                             </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-3 col-6">
+                    <div class="media">
+                        <div class="media-body rounded" style="padding: 5px;">
+                             <div class="img bg-light rounded" style="width: 100%; padding: 5px;">
+                                 <img src="image/color.JPG" class="rounded align-self-start" width="100%" height="300px"  alt="">
+                                 <h4>$35</h4>
+                                 <h6 style="padding-bottom: 0px;">Hood Wears</h6>
+                                 <small>Stock: <b class="text-success">10</b></small>
+                                 <small>Sold: <b class="text-success">8</b></small>
+                                 <div class="btn-group btn-group-vertical" style="width: 100%;">
+                                    <button class="btn text-light" style="background-color: rgb(2, 117, 2); font-size: 2vh;" data-target="#cartmodal" data-toggle="modal">BUY NOW <i class="fas fa-phone text-success"></i></button>
+                                    <button class="btn text-light" style="background-color: black; font-size: 2vh;" data-target="#cartmodal"> Cart <i class="fas fa-shopping-cart"></i></button>
+                                </div>
+                             </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-6">
+                    <div class="media">
+                        <div class="media-body rounded" style="padding: 5px;">
+                             <div class="img bg-light rounded" style="width: 100%; padding: 5px;">
+                                 <img src="image/tooned.JPG" class="rounded align-self-start" width="100%" height="300px"  alt="">
+                                 <h4>$35</h4>
+                                 <h6 style="padding-bottom: 0px;">Hood Wears</h6>
+                                 <small>Stock: <b class="text-success">10</b></small>
+                                 <small>Sold: <b class="text-success">8</b></small>
+                                 <div class="btn-group btn-group-vertical" style="width: 100%;">
+                                    <button class="btn text-light" style="background-color: rgb(2, 117, 2); font-size: 2vh;" data-target="#cartmodal" data-toggle="modal">BUY NOW <i class="fas fa-phone text-success"></i></button>
+                                    <button class="btn text-light" style="background-color: black; font-size: 2vh;" data-target="#cartmodal"> Cart <i class="fas fa-shopping-cart"></i></button>
+                                </div>
+                             </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-6">
+                    <div class="media">
+                        <div class="media-body rounded" style="padding: 5px;">
+                             <div class="img bg-light rounded" style="width: 100%; padding: 5px;">
+                                 <img src="image/collaaa.JPG" class="rounded align-self-start" width="100%" height="300px"  alt="">
+                                 <h4>$35</h4>
+                                 <h6 style="padding-bottom: 0px;">Hood Wears</h6>
+                                 <small>Stock: <b class="text-success">10</b></small>
+                                 <small>Sold: <b class="text-success">8</b></small>
+                                 <div class="btn-group btn-group-vertical" style="width: 100%;">
+                                    <button class="btn text-light" style="background-color: rgb(2, 117, 2); font-size: 2vh;" data-target="#cartmodal" data-toggle="modal">BUY NOW <i class="fas fa-phone text-success"></i></button>
+                                    <button class="btn text-light" style="background-color: black; font-size: 2vh;" data-target="#cartmodal"> Cart <i class="fas fa-shopping-cart"></i></button>
+                                </div>
+                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+                <!--Footer Section-->
+        <div class="foot" style="background-color: black; color: white;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h2 style="color: white; text-align: center;">Store <i class="fas fa-"></i></h2>
+                        <h3 style="color: white;">Shoptify.store</h3>
+                        <p>+234 8032211975</p>
+                        <p>Shoptify@gmail.com</p>
+                        <p style="font-size: x-large;">We Accept <i class="fas fa-user-check fa-3"></i></p>
+                        <p>Transfer <i class="fas fa-angle-double-right"></i> <i class="fas fa-mobile-alt"></i> 
+                        <p>POS <i class="fas fa-angle-double-right"></i> <i class="fas fa-credit-card"></i>
+                    </div>
+                    <div class="col-md-4">
+                        <h3 style="text-align: center;">ABOUT</h3>
+                         <p>Transaction and Payment are done Immediately the Goods ar delivered to customers <i class="fas fa-credit-card"></i></p>
+                         <p>Transaction before PAYMENT are <br> <strong style="color: red; font-size: x-large;"> &times; </strong> NOT ACCEPTED/ALLOWED <strong style="color: red; font-size: x-large;"> &times; </strong> </p>
+                         <p>We make sure the goods are deliverd to the right customer</p>
+                         <p>Thanks Fo Choosing &nbsp;<a href="index.html" class="">ShoptiFy.store</a></p>
+                    </div>
+                    <div class="col-md-4">
+                        <h3>Questions? Go ahead</h3>
+                        <form action="" class="form-group">
+                            <input type="email" class="form-control" placeholder="E-mail Addres" required>
+                            <input type="text" class="form-control" placeholder="Question?" required>
+                            <button class="btn btn-danger">SUBMIT <i class="fas fa-question"></i></button>
+                        </form>
+                        <form action="" id="con" class="form-group justify-content-center">
+                                <h3>CONTACT-US</h3>
+                            <input type="email" class="form-control" placeholder="E-mail Address">
+                            <input type="text" class="form-control" placeholder="Comment">
+                            <button class="btn btn-success">SEND <i class="fas fa-check"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+                <nav class="navbar justify-content-center" style="background-color: rgba(14, 13, 13, 0.829);">
+                    Developed &nbsp;<i class="fas fa-code"></i> &nbsp; By Tejumola Emmanuel &nbsp; <i class="fas fa-desktop"></i>
+                </nav>
+        </div>
+
+    <script src="jquery-3.4.1.slim.min.js"></script>
+    <script src="popper.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+<!--     <div class="col">
+                    <div class="media">
+                        <div class="media-body rounded" style="padding: 5px;">
+                             <div class="img bg-light rounded" style="width: 150px; padding: 5px;">
+                                 <img src="image/girl_train.jpg" class="rounded align-self-start" width="140px" height="150px" alt="">
+                                 <h4>$35</h4>
+                                 <h6 style="padding-bottom: 0px;">Plain T-shirt</h6>
+                                 <small>Stock: <b class="text-success">10</b></small>
+                                 <small>Sold: <b class="text-success">8</b></small>
+                                 <button class="btn text-light" data-target="#cartmodal" data-toggle="modal" style="background-color: black; width: 100%; font-size: small;">BUY NOW <i class="fas fa-phone text-success"></i></button>
+                             </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="media">
+                        <div class="media-body rounded" style="padding: 5px;">
+                             <div class="img bg-light rounded" style="width: 150px; padding: 5px;">
+                                 <img src="image/jeans4.jpg" class="rounded align-self-start" width="140px" height="150px" alt="">
+                                 <h4>$30</h4>
+                                 <h6 style="padding-bottom: 0px;">Vintage Jeans</h6>
+                                 <small>Stock: <b class="text-success">10</b></small>
+                                 <small>Sold: <b class="text-success">8</b></small>
+                                 <button class="btn text-light" data-target="#cartmodal" data-toggle="modal" style="background-color: black; width: 100%; font-size: small;">BUY NOW <i class="fas fa-phone text-success"></i></button>
+                             </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="media">
+                        <div class="media-body rounded" style="padding: 5px;">
+                             <div class="img bg-light rounded" style="width: 150px; padding: 5px;">
+                                 <img src="image/people2.jpg" class="rounded align-self-start" width="140px" height="150px" alt="">
+                                 <h4>50</h4>
+                                 <h6 style="padding-bottom: 0px;">Hood Wears</h6>
+                                 <small>Stock: <b class="text-success">10</b></small>
+                                 <small>Sold: <b class="text-success">8</b></small>
+                                 <button class="btn text-light" data-target="#cartmodal" data-toggle="modal" style="background-color: black; width: 100%; font-size: small;">BUY NOW <i class="fas fa-phone text-success"></i></button>
+                             </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="media">
+                        <div class="media-body rounded" style="padding: 5px;">
+                             <div class="img bg-light rounded" style="width: 150px; padding: 5px;">
+                                 <img src="image/jeans3.jpg" class="rounded align-self-start" width="140px" height="150px" alt="">
+                                 <h4>$50</h4>
+                                 <h6 style="padding-bottom: 0px;">Skinny Jeans</h6>
+                                 <small>Stock: <b class="text-success">10</b></small>
+                                 <small>Sold: <b class="text-success">8</b></small>
+                                 <button class="btn text-light" data-target="#cartmodal" data-toggle="modal" style="background-color: black; width: 100%; font-size: small;">BUY NOW <i class="fas fa-phone text-success"></i></button>
+                             </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="media">
+                        <div class="media-body rounded" style="padding: 5px;">
+                             <div class="img bg-light rounded" style="width: 150px; padding: 5px;">
+                                 <img src="image/jeans2.jpg" class="rounded align-self-start" width="140px" height="150px" alt="">
+                                 <h4>$75</h4>
+                                 <h6 style="padding-bottom: 0px;">Ripped Jeans</h6>
+                                 <small>Stock: <b class="text-success">10</b></small>
+                                 <small>Sold: <b class="text-success">8</b></small>
+                                 <button class="btn text-light" data-target="#cartmodal" data-toggle="modal" style="background-color: black; width: 100%; font-size: small;">BUY NOW <i class="fas fa-phone text-success"></i></button>
+                             </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="media">
+                        <div class="media-body rounded" style="padding: 5px;">
+                             <div class="img bg-light rounded" style="width: 150px; padding: 5px;">
+                                 <img src="image/man_hat.jpg" class="rounded align-self-start" width="140px" height="150px" alt="">
+                                 <h4>$30</h4>
+                                 <h6 style="padding-bottom: 0px;">Hat and Top(Men)</h6>
+                                 <small>Stock: <b class="text-success">10</b></small>
+                                 <small>Sold: <b class="text-success">8</b></small>
+                                 <button class="btn text-light" data-target="#cartmodal" data-toggle="modal" style="background-color: black; width: 100%; font-size: small;">BUY NOW <i class="fas fa-phone text-success"></i></button>
+                             </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="media">
+                        <div class="media-body rounded" style="padding: 5px;">
+                             <div class="img bg-light rounded" style="width: 150px; padding: 5px;">
+                                 <img src="image/jane.jpg" class="rounded align-self-start" width="140px" height="150px" alt="">
+                                 <h4>$95</h4>
+                                 <h6 style="padding-bottom: 0px;">Complete Dress</h6>
+                                 <small>Stock: <b class="text-success">10</b></small>
+                                 <small>Sold: <b class="text-success">8</b></small>
+                                 <button class="btn text-light" data-target="#cartmodal" data-toggle="modal" style="background-color: black; width: 100%; font-size: small;">BUY NOW <i class="fas fa-phone text-success"></i></button>
+                             </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="media">
+                        <div class="media-body rounded" style="padding: 5px;">
+                             <div class="img bg-light rounded" style="width: 150px; padding: 5px;">
+                                 <img src="image/parallax3.jpg" class="rounded align-self-start" width="140px" height="150px" alt="">
+                                 <h4>$100</h4>
+                                 <h6 style="padding-bottom: 0px;">Canon Camera</h6>
+                                 <small>Stock: <b class="text-success">10</b></small>
+                                 <small>Sold: <b class="text-success">8</b></small>
+                                 <button class="btn text-light" data-target="#cartmodal" data-toggle="modal" style="background-color: black; width: 100%; font-size: small;">BUY NOW <i class="fas fa-phone text-success"></i></button>
+                             </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="media">
+                        <div class="media-body rounded" style="padding: 5px;">
+                             <div class="img bg-light rounded" style="width: 150px; padding: 5px;">
+                                 <img src="image/team1.jpg" class="rounded align-self-start" width="140px" height="150px" alt="">
+                                 <h4>$65</h4>
+                                 <h6 style="padding-bottom: 0px;">Ladies Hat + Shirt</h6>
+                                 <small>Stock: <b class="text-success">10</b></small>
+                                 <small>Sold: <b class="text-success">8</b></small>
+                                 <button class="btn text-light" data-target="#cartmodal" data-toggle="modal" style="background-color: black; width: 100%; font-size: small;">BUY NOW <i class="fas fa-phone text-success"></i></button>
+                             </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="media">
+                        <div class="media-body rounded" style="padding: 5px;">
+                             <div class="img bg-light rounded" style="width: 150px; padding: 5px;">
+                                 <img src="image/avatar.jpg" class="rounded align-self-start" width="140px" height="150px" alt="">
+                                 <h4>$15</h4>
+                                 <h6 style="padding-bottom: 0px;">Sun Glasses</h6>
+                                 <small>Stock: <b class="text-success">10</b></small>
+                                 <small>Sold: <b class="text-success">8</b></small>
+                                 <button class="btn text-light" data-target="#cartmodal" data-toggle="modal" style="background-color: black; width: 100%; font-size: small;">BUY NOW <i class="fas fa-phone text-success"></i></button>
+                             </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="media">
+                        <div class="media-body rounded" style="padding: 5px;">
+                             <div class="img bg-light rounded" style="width: 150px; padding: 5px;">
+                                 <img src="image/wedding_couple2.jpg" class="rounded align-self-start" width="140px" height="150px" alt="">
+                                 <h4>$1500</h4>
+                                 <h6 style="padding-bottom: 0px;">Wedding Dress</h6>
+                                 <small>Stock: <b class="text-success">10</b></small>
+                                 <small>Sold: <b class="text-success">8</b></small>
+                                 <button class="btn text-light" data-target="#cartmodal" data-toggle="modal" style="background-color: black; width: 100%; font-size: small;">BUY NOW <i class="fas fa-phone text-success"></i></button>
+                             </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="media">
+                        <div class="media-body rounded" style="padding: 5px;">
+                             <div class="img bg-light rounded" style="width: 150px; padding: 5px;">
+                                 <img src="image/cars3.jpg" class="rounded align-self-start" width="140px" height="150px" alt="">
+                                 <h4>$800</h4>
+                                 <h6 style="padding-bottom: 0px;">Tortoise Car</h6>
+                                 <small>Stock: <b class="text-success">10</b></small>
+                                 <small>Sold: <b class="text-success">8</b></small>
+                                 <button class="btn text-light" data-target="#cartmodal" data-toggle="modal" style="background-color: black; width: 100%; font-size: small;">BUY NOW <i class="fas fa-phone text-success"></i></button>
+                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>  -->
+</body>
+</html>

@@ -1,0 +1,160 @@
+html{
+    scroll-behavior: smooth;
+}
+#li{
+    color: black;
+    font-size: large;
+    font-weight: bold;
+    margin-left: 10px;
+}
+.navbar-nav .nav-item .nav-link{
+    color: black;
+}
+.container-fluid{
+    padding: 30px;
+}
+.line{
+    background-color: rgb(178, 0, 0);
+    height: 200px;
+    width: 15px;
+}
+h2{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 50px;
+    font-weight: bolder;
+    color: white;
+    text-shadow: black 3px 4px 5px;
+}
+#btn{
+    border-radius: 10px; 
+    box-shadow: 2px 2px 3px 4px black;
+    border: solid 2px black;
+    color: black;
+    font-size: large;
+    font-weight: bolder;
+    font-family: 'Courier New', Courier, monospace; 
+}
+#img{
+    width: 300px;
+    height: 500px;
+    max-width: 300px;
+    max-height: 600px;
+    min-width: 100px;
+    min-height: 100px;
+    position: center;
+    size: cover;
+}
+.container-fluid{
+    background-color: rgba(228, 139, 6, 0.891);
+    margin-top: 2px;
+}
+input{
+    margin-top: 10px;
+}
+button{
+    margin-top: 10px;
+}
+marquee h3{
+    text-shadow: black 1px 2px 3px;
+}
+#lady{
+    border-radius: 20px; 
+    box-shadow: black 1px 2px 3px 4px;
+}
+.row{
+    margin: 10px 0px 10px 0px;    
+}
+@media screen and (max-width: 420px){
+    #contact{
+        margin-left: 20px;
+    }
+    #contact #h1{
+        font-size: xx-large;
+    }
+    #m{
+       display: none;
+       position: absolute;
+       z-index: 1;
+    }
+    #md{
+        display: none;
+        position: absolute;
+        z-index: 1;
+    }
+    #h1{
+        font-size: 40px;
+    }
+    #im{
+        width: 130px;
+        height: 250px;
+    }
+    #h2{
+        font-size: 40px;
+    }
+    marquee h3{
+        font-size: small;
+    }
+}
+
+@media screen and (min-width: 420px){
+    #m{
+        width: 150px;
+        height: 310px;
+    }
+    #h2{
+        font-size: 40px;
+    }
+    #im{
+        width: 150px;
+        height: 310px;
+    }
+}
+ @media screen and (max-width: 1024px){
+    #md{
+        display: none;
+        position: relative;
+    }
+    #m{
+       display: none;
+       position: absolute;
+    }
+} 
+@media screen and (min-width: 1024px){
+    #md{
+        display: block;
+        position: relative;
+    }
+    #m{
+        width: 140px;
+        height: 320px;
+    }
+    #im{
+        width: 1 0px;
+        height: 320px;
+    }
+} 
+#li1{
+    font-weight: bold;
+    font-size: large;
+    color: black;
+}
+#r{
+    border: solid black 2px;
+    border-radius: 5px;
+    margin: 10px -0px 10px 0px;
+}
+@media only screen and (min-width: 760px) and (max-width: 770px){
+    #r{
+        padding-right: 20px;
+    }
+}
+@media screen and (max-width: 768px){
+    .media-body img{
+        height: 150px;
+    }
+}
+@media screen and (max-width: 325px){
+    small{
+        display: block;
+    }
+}
