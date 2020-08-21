@@ -111,7 +111,7 @@
                     <div class="col-md-3 col-6">
                         
                         <div class="card">
-                            <img src="image/complete.JPG" alt="" class="card-img">
+                            <img src="image/complete.JPG" data-toggle="modal" data-target="#imgZoom" onclick="openImg(this)" alt="" class="card-img">
                             <div class="card-body p-1">
                                 <h4>&#8358;2500</h4>
                                 <b>Customised</b>
@@ -126,7 +126,7 @@
                     <div class="col-md-3 col-6">
                         
                         <div class="card">
-                            <img src="shoes/WVQE2523.jpg" alt="" class="card-img">
+                            <img src="shoes/WVQE2523.jpg" onclick="openImg(this)" data-toggle="modal" data-target="#imgZoom" alt="" class="card-img">
                             <div class="card-body p-1">
                                 <h4>&#8358;7500</h4>
                                 <b>Slide</b>
@@ -141,7 +141,7 @@
                     <div class="col-md-3 col-6">
                         
                         <div class="card">
-                            <img src="shoes/IMG_E7306.JPG" alt="" class="card-img">
+                            <img src="shoes/IMG_E7306.JPG" onclick="openImg(this)" data-toggle="modal" data-target="#imgZoom" alt="" class="card-img">
                             <div class="card-body p-1">
                                 <h4>&#8358;15000</h4>
                                 <b>Nike Sport</b>
@@ -156,7 +156,7 @@
                     <div class="col-md-3 col-6">
                         
                         <div class="card">
-                            <img src="bags/IMG_E7291.JPG" alt="" class="card-img">
+                            <img src="bags/IMG_E7291.JPG" onclick="openImg(this)" data-toggle="modal" data-target="#imgZoom" alt="" class="card-img">
                             <div class="card-body p-1">
                                 <h4>&#8358;2000</h4>
                                 <b>Ladies Bags</b>
@@ -173,78 +173,96 @@
                 <div class="row" id="Medium">
                     <div class="col-md-2 col-4">
                         <div class="card">
-                            <img src="bags/IMG_E7289.JPG" class="card-img" alt="">
+                            <img src="bags/IMG_E7289.JPG" onclick="openImg(this)" class="card-img" alt="">
                             <div class="card-body text-left p-0">
-                                <h4 style="font-size: 2vmax; margin-bottom: 0px;"> 
+                                <h4> 
                                     <del> &#8358;3000 </del>
                                         &#8358;2000
                                 </h4>
-                                    <button data-toggle="modal" data-target="#buy-modal" class="btn btn-dark" style="width: 100%; font-size: 2vmax;">Buy <i class="fas fa-shopping-cart"></i></del></button>
+                                     <div class="btn-group btn-group-vertical float-right">
+                                    <button class="btn text-light float-left" style="background-color: rgb(2, 117, 2); font-size: 1.6vmax;" data-target="#buy-modal" data-toggle="modal">BUY NOW <i class="fas fa-phone text-success"></i></button>
+                                    <button class="btn text-light float-right" style="background-color: black; font-size: 1.6vmax;" data-toggle="modal" data-target="#cart-modal"> Cart <i class="fas fa-shopping-cart"></i></button>
+                                </div>
                             </div>
                         </div>
                     </div>
 
                     <div class="col-md-2 col-4">
                         <div class="card">
-                            <img src="bags/IMG_E7291.JPG" class="card-img" alt="">
+                            <img src="bags/IMG_E7291.JPG" onclick="openImg(this)" class="card-img" alt="">
                             <div class="card-body text-left p-0">
-                                <h4 style="font-size: 2vmax; margin-bottom: 0px;"> 
+                                <h4> 
                                     <del> &#8358;3000 </del>
                                         &#8358;2000
                                 </h4>
-                                    <button class="btn btn-dark" style="width: 100%; font-size: 2vmax;">Buy <i class="fas fa-shopping-cart"></i></del></button>
+                                <div class="btn-group btn-group-vertical float-right">
+                                    <button class="btn text-light float-left" style="background-color: rgb(2, 117, 2); font-size: 1.6vmax;" data-target="#buy-modal" data-toggle="modal">BUY NOW <i class="fas fa-phone text-success"></i></button>
+                                    <button class="btn text-light float-right" style="background-color: black; font-size: 1.6vmax;" data-toggle="modal" data-target="#cart-modal"> Cart <i class="fas fa-shopping-cart"></i></button>
+                                </div>
                             </div>
                         </div>
                     </div>
 
                     <div class="col-md-2 col-4">
                         <div class="card">
-                            <img src="bags/IMG_E7292.JPG" class="card-img" alt="">
+                            <img src="bags/IMG_E7292.JPG" onclick="openImg(this);" class="card-img" alt="">
                             <div class="card-body text-left p-0">
-                                <h4 style="font-size: 2vmax; margin-bottom: 0px;"> 
+                                <h4> 
                                     <del> &#8358;3000 </del> 
                                         &#8358;2000
                                 </h4>
-                                    <button class="btn btn-dark" style="width: 100%; font-size: 2vmax;">Buy <i class="fas fa-shopping-cart"></i></del></button>
+                                <div class="btn-group btn-group-vertical float-right">
+                                    <button class="btn text-light float-left" style="background-color: transparent; border: solid 2px green; border-top-right-radius: 5px; border-top-left-radius: 5px; font-size: 1.6vmax;" data-target="#buy-modal" data-toggle="modal">BUY NOW <i class="fas fa-phone text-success"></i></button>
+                                    <button class="btn text-light float-right" style="background-color: transparent; border: solid 2px black; border-bottom-left-radius: 5px; border-bottom-right-radius: 5px; font-size: 1.6vmax;" data-toggle="modal" data-target="#cart-modal"> Cart <i class="fas fa-shopping-cart"></i></button>
+                                </div>
                             </div>
                         </div>
                     </div>
 
                     <div class="col-md-2 col-4">
                         <div class="card">
-                            <img src="bags/IMG_E7294.JPG" class="card-img" alt="">
+                            <img src="bags/IMG_E7294.JPG" onclick="openImg(this)" class="card-img" alt="">
                             <div class="card-body text-left p-0">
-                                <h4 style="font-size: 2vmax; margin-bottom: 0px;"> 
+                                <h4> 
                                     <del> &#8358;3000 </del>
                                         &#8358;2000
                                 </h4>
-                                    <button class="btn btn-dark" style="width: 100%; font-size: 2vmax;">Buy <i class="fas fa-shopping-cart"></i></del></button>
+                                <div class="btn-group btn-group-vertical float-right">
+                                    <button class="btn text-light float-left" style="background-color: rgb(2, 117, 2); font-size: 1.6vmax;" data-target="#buy-modal" data-toggle="modal">BUY NOW <i class="fas fa-phone text-success"></i></button>
+                                    <button class="btn text-light float-right" style="background-color: black; font-size: 1.6vmax;" data-toggle="modal" data-target="#cart-modal"> Cart <i class="fas fa-shopping-cart"></i></button>
+                                </div>
                             </div>
                         </div>
                     </div>
 
                     <div class="col-md-2 col-4">
                         <div class="card">
-                            <img src="bags/IMG_E7295.JPG" class="card-img" alt="">
+                            <img src="bags/IMG_E7295.JPG" onclick="openImg(this)" class="card-img" alt="">
                             <div class="card-body text-left p-0">
-                                <h4 style="font-size: 2vmax; margin-bottom: 0px;"> 
+                                <h4> 
                                     <del> &#8358;3000 </del>
                                         &#8358;2000
                                 </h4>
-                                    <button class="btn btn-dark" style="width: 100%; font-size: 2vmax;">Buy <i class="fas fa-shopping-cart"></i></del></button>
+                                <div class="btn-group btn-group-vertical float-right">
+                                    <button class="btn text-light float-left" style="background-color: rgb(2, 117, 2); font-size: 1.6vmax;" data-target="#buy-modal" data-toggle="modal">BUY NOW <i class="fas fa-phone text-success"></i></button>
+                                    <button class="btn text-light float-right" style="background-color: black; font-size: 1.6vmax;" data-toggle="modal" data-target="#cart-modal"> Cart <i class="fas fa-shopping-cart"></i></button>
+                                </div>
                             </div>
                         </div>
                     </div>
 
                     <div class="col-md-2 col-4">
                         <div class="card">
-                            <img src="bags/IMG_E7288.JPG" class="card-img" alt="">
+                            <img src="bags/IMG_E7288.JPG" onclick="openImg(this)" class="card-img" alt="">
                             <div class="card-body text-left p-0">
-                                <h4 style="font-size: 2vmax; margin-bottom: 0px;"> 
+                                <h4> 
                                     <del> &#8358;3000 </del>
                                         &#8358;2000
                                 </h4>
-                                    <button class="btn btn-dark" style="width: 100%; font-size: 2vmax;">Buy <i class="fas fa-shopping-cart"></i></del></button>
+                                <div class="btn-group btn-group-vertical float-right">
+                                    <button class="btn text-light float-left" style="background-color: transparent; border: solid 2px green; border-top-right-radius: 3px; border-top-left-radius: 5px; font-size: 1.6vmax;" data-target="#buy-modal" data-toggle="modal">BUY NOW <i class="fas fa-phone text-success"></i></button>
+                                    <button class="btn text-light float-right" style="background-color: transparent; border: solid 2px black; border-bottom-left-radius: 53x; border-bottom-right-radius: 5px; font-size: 1.6vmax;" data-toggle="modal" data-target="#cart-modal"> Cart <i class="fas fa-shopping-cart"></i></button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -300,7 +318,66 @@
                     Developed &nbsp;<i class="fas fa-code"></i> &nbsp; By Tejumola Emmanuel &nbsp; <i class="fas fa-desktop"></i>
                 </nav>
         </div>
+        <div class="modal" id="imgZoom">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <h2 class="modal-title bg-warning">
+                        ShoptiFy<i class="fas fa-shopping-cart"></i>
+                        <button type="button" class="close" data-dismiss="modal" style="font-size: xx-large; padding: 10px;">&times;</button>
+                    </h2>
+                    <div class="container p-2">
+                        <img id="expandedImg" style="width: 100%;">
+                    </div>
+                    <div class="quality p-2">
+                        <h4 class="text-center">Quality</h4>
+                        <h5>Sizes</h5>
+                        <table class="table-striped text-center table-dark" style="width: 100%;">
+                            <tr class="bg-warning">
+                                <td>
+                                    Sizes
+                                </td>
+                                <td>
+                                    Quantity
+                                </td>
+                            </tr>
 
+                            <tr>
+                                <td>
+                                    41
+                                </td>
+                                <td>
+                                    6
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    42
+                                </td>
+                                <td>
+                                    5
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    43-45
+                                </td>
+                                <td>
+                                    8
+                                </td>
+                            </tr>
+                        </table>
+                        <h5>Strength</h5>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-stripped progress-bar-animated"></div>
+                        </div>
+                        <h5>Soul</h5>
+                    </div>
+                        
+                </div>
+            </div>
+        </div>
         <div class="modal" id="cart-modal">
             <div class="modal-dialog">
                 <div class="modal-content">
@@ -344,5 +421,6 @@
     <script src="jquery-3.4.1.slim.min.js"></script>
     <script src="popper.min.js"></script>
     <script src="bootstrap.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
